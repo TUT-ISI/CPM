@@ -1,0 +1,109 @@
+Size distribution
+   Mode 1
+   Geometric mean diameter (nm)     3.250E+01
+   Geometric standard deviation     4.330E+00
+   Number concentration (#/cm-3)    1.810E+02
+   Number of size bins in mode *    100
+
+   Mode 2
+   Geometric mean diameter (nm)     7.760E+01
+   Geometric standard deviation     1.360E+00
+   Number concentration (#/cm-3)    2.860E+02
+   Number of size bins in mode *    100
+
+   Mode 3
+   Geometric mean diameter (nm)     8.000E+03
+   Geometric standard deviation     1.200E+00
+   Number concentration (#/cm-3)    1.000E+01
+   Number of size bins in mode *    100
+
+   Mode 4
+   Geometric mean diameter (nm)     2.000E+01
+   Geometric standard deviation     1.350E+00
+   Number concentration (#/cm-3)    2.800E+02
+   Number of size bins in mode *    50
+
+   Mode 5
+   Geometric mean diameter (nm)     2.000E+02
+   Geometric standard deviation     1.490E+00
+   Number concentration (#/cm-3)    1.000E+02
+   Number of size bins in mode *    50
+
+
+   Total number of size bins **     200
+   Mode mode (manual/auto)          manual
+   Total number of modes ***        2
+   Separate modes (yes/no)          yes
+
+*   this is used only if separate modes are used
+**  this is used only if modes are inseparable or number of modes = 1
+*** force the number of modes, if set to manual
+
+
+Given weight fractions only have to be in correct proportion.
+They are normalized after reading the values.
+
+Liquid phase
+Weight fraction in  mode1    mode2    mode3    mode4    mode5    mode6
+A  H2O(l)           1.00E-03 1.00E-03 1.00E-03 0.00E+00 0.00E+00 0.00E+00
+A  H+               0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  OH-              0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  H2SO4(l)         0.00E-05 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  HSO4-            0.00E-05 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  SO42-            1.00E-06 1.00E-06 0.00E-07 0.00E+00 0.00E+00 0.00E+00
+D  HNO3(l)          1.00E-03 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  NO3-             0.00E-03 0.00E-03 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  NH3(l)           1.00E-05 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  NH4+             0.00E-05 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  HCl(l)           0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  Cl-              1.00E-05 1.00E-07 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  SO2(l)           0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  HSO3-            0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  SO32-            0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  H2O2(l)          0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  O3(l)            0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  NO2(l)           0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  CO2(l)           0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  HCO3-            0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  CO32-            0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  Na+              0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  Mg2+             0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  C10H16O3(l)      0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  C2H6SO(l)        0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00
+D  CH4SO3(l)        0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00
+D  C6H14N4O2(l)     0.00E+00 0.00E+00 0.00E+00 10.0E+00 9.00E+00 0.00E+00
+D  C7H10O5(l)       0.00E+00 0.00E+00 0.00E+00 6.00E+00 5.00E+00 0.00E+00
+D  C13H25NO5(l)     0.00E+00 0.00E+00 0.00E+00 6.00E+00 5.00E+00 0.00E+00
+D  C52H88O15(l)     0.00E+00 0.00E+00 0.00E+00 4.00E+00 3.00E+00 0.00E+00
+
+Solid phase
+D  NH4NO3(s)        1.00E-03 1.00E-04 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  NH4Cl(s)         0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  NH4HSO4(s)       0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  (NH4)2SO4(s)     1.00E+00 1.00E-00 1.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  (NH4)3H(SO4)2(s) 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  NaCl(s)          0.00E+00 0.00E+00 0.00E+00 3.00E+00 6.00E+00 0.00E+00
+D  Na2SO4(s)        0.00E+00 0.00E+00 0.00E+00 2.00E+00 11.0E+00 0.00E+00
+D  MgSO4(s)         0.00E+00 0.00E+00 0.00E+00 3.00E+00 3.00E+00 0.00E+00
+D  MgCl2(s)         0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  C10H16O3(s)      0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  WINSOS(s)        0.00E+00 0.00E+00 0.00E+00 64.0E+00 56.0E+00 0.00E+00
+D  C6H14N4O2(s)     0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  C7H10O5(s)       0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  C13H25NO5(s)     0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+D  C52H88O15(s)     0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+A  Carbon(s)        1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00
+
+Gases
+A  H2O       
+D  HNO3      1.00E-02 ppb
+D  NH3       0.10E+00 ppb
+D  HCl       0.00E+00 ppb
+D  SO2       0.10E+00 ppb
+D  H2O2      0.50E+00 ppb
+D  O3        3.00E+01 ppb
+D  NO2       0.10E+00 ppb
+D  CO2       0.10E+00 ppm
+D  OH        0.10E+00 ppb 
+D  C10H16O3  2.60E+00 ppt
+

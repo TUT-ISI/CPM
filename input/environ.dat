@@ -1,0 +1,46 @@
+Environmental parameters
+
+
+BEGIN
+&Conditions
+   Temperature       = 277.0, 
+   Pressure          = 90000.,
+   RelativeHumidity  = 95.0,
+   HeightofCloudBase = 1000,
+   VerticalSpeed     = 1.6,
+   i_out             = 1,
+   IfCloud           = 1,
+   IfCoag            = 0,
+   IfFreez           = 0,
+$EndConditions
+
+&Timing
+   FinHour           = 0.0,
+   FinMin            = 0.0,
+   FinSec            = 500.0,
+   DtOut             = 0.2,
+   DtOutIce          = 0.2,
+   t_file	     = 2.0,	
+&EndTiming
+
+&ODESolver
+   RelativeTolerance = 1.0E-6, 
+   AbsoluteTolerance = 1.0E-32, 
+   StepMax           = 1.0E-1,
+$EndODESolver
+
+IDRIVER_EQ (0=OFF,1=ON)
+&DRIVER_EQUILIBRIUM
+   IDRIVER_EQ        = 0
+   DRIV_EQ_TIME      = 86400
+   DTOUT_eq          = 200.0
+   StepMax_eq        = 100.0D0
+$EndDRIVER_EQUILIBRIUM
+
+&MULTIBOX
+   CLOUD_MOD = 1
+   rmin_cloud = 5.e-6
+   IF_BOXES = 0
+   N_BOX= 200
+$EndMULTIBOX
+&

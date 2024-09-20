@@ -1,0 +1,118 @@
+Input file for data for liquid phase 
+compounds
+
+BEGIN
+------------------------------------------
+&Compound
+ Name                 = 'Ammonium nitrate',
+ Formula              = 'NH4NO3(s)',
+ WeightMole           = 80.05,
+ Density              = 1.73,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ammonium chloride',
+ Formula              = 'NH4Cl(s)',
+ WeightMole           = 53.49,
+ Density              = 1.53,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ammonium bisulfate',
+ Formula              = 'NH4HSO4(s)',
+ WeightMole           = 115.11,
+ Density              = 1.78,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ammonium sulfate',
+ Formula              = '(NH4)2SO4(s)',
+ WeightMole           = 132.14,
+ Density              = 1.77,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Letovicite',
+ Formula              = '(NH4)3H(SO4)2(s)',
+ WeightMole           = 247.26,
+ Density              = 1.83,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sodium chloride',
+ Formula              = 'NaCl(s)',
+ WeightMole           = 58.44,
+ Density              = 2.17,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sodium sulfate',
+ Formula              = 'Na2SO4(s)',
+ WeightMole           = 142.0,
+ Density              = 2.68,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Magnesium chloride',
+ Formula              = 'MgCl2(s)',
+ WeightMole           = 95.0,
+ Density              = 2.33,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Magnesium sulfate',
+ Formula              = 'MgSO4(s)',
+ WeightMole           = 120.0,
+ Density              = 2.66,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Pinonic acid',
+ Formula              = 'C10H16O3(s)',
+ WeightMole           = 184.23,
+ Density              = 0.786,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'WINSOS',
+ Formula              = 'WINSOS(s)',
+ WeightMole           = 2000.0,
+ Density              = 1.0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Arginine',
+ Formula              = 'C6H14N4O2(s)',
+ WeightMole           = 174.0,
+ Density              = 1.400,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = '4-oxo-pimelic acid',
+ Formula              = 'C7H10O5(s)',
+ WeightMole           = 174.0,
+ Density              = 1.240,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Boc-statine',
+ Formula              = 'C13H25NO5(s)',
+ WeightMole           = 275.0,
+ Density              = 1.100,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Marine FA',
+ Formula              = 'C52H88O15(s)',
+ WeightMole           = 952.0,
+ Density              = 1.090,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Carbon',
+ Formula              = 'Carbon(s)',
+ WeightMole           = 12.0,
+ Density              = 1.25,
+$EndCompound
+END
+

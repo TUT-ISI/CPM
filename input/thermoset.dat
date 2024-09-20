@@ -1,0 +1,85 @@
+Thermodynamics model parameters
+
+Thermo_model = 1: Luo et. al.
+	       2: Jacobson
+               3: Raatikainen
+	       4: Clegg
+&THERMO_MOD
+   Ithermo_mod = 4
+$EndTHERMO_MOD
+
+
+! Options for the thermodynamic model 3
+! -------------------------------------
+
+! a) General options
+&EQSolver
+   UseAbsoluteTolerance    = T,		! Either absolute or relative tolerance for equilibrium calculations
+     FirstEqRelTolerance   = 1.0E-22,	! First equilibrium. Stop iteration when Tol > (1-prod(a_i)/Keq)^2
+     LaterEqRelTolerance   = 1.0E-24,	! Later equilibriums
+     FirstEqAbsTolerance   = 1.0E-12,	! Stop iteration when max uncertainty in concentrations less than Tol*C
+     LaterEqAbsTolerance   = 1.0E-8,	! Later equilibriums
+   MaxIterationNumber      = 5000,	! Equilibrium is usually found within a couple hundred rounds
+   ActivityCoefficentModel = 1, 	! 1=Clegg, 2=Clegg (25 C), 3=Pitzer (different parameters set), 8=ideal solution
+   MaxKelvin               = 1000.0,	! If less than or equal to 1.0, Kelvin effect is ignored
+   DisplayInputReport      = F		! Prints information about equilibrium and activity parameters (debugging)
+&EndEQSolver
+
+! b) Options for selecting initial equilibriums for water and organics
+&InitialOrganicEquilibriums
+   WaterGasLiquid         = T,	! Water gas-liquid euilibrium
+     OpenWaterGasPhase    = F,	! Open/closed gas phase for water
+   OrganicSolidLiquid     = T,	! Organics solid-liquid equilibrium 
+     OrganicSLEMethod     = 1,	! Solubility from: 1=saturation mole fraction, 2=saturation activity
+   FirstSolidsToLiquids   = T,	! All soluble organics are set to liquids. Can be used if composition given as solid, but solubility calculations are not needed
+   OrganicGasLiquid       = F,	! Organics gas-liquid equilibrium
+     OrganicVLEMethod     = 1,	! Gas solubility from: 1=Henry's law coefficients, 2=saturation vapor pressure
+     OpenOrganicGasPhase  = F,	! Open/closed gas phase for water
+&EndInitialOrganicEquilibriums
+
+
+! c) Options for selecting initial equilibriums for inorganics
+&InitialInorganicEquilibriums
+   SaltSolidLiquid        = F,	! Inorganics solid-liquid equilibrium
+   FirstSolidsToLiquids   = T,	! All soluble salts are set to ions. Can be used if composition given as solid salt
+   IonIonEquilibrium      = T,	! Ion-ion equilibrium, e.g. HSO4- <-> H+ + SO4--
+   WaterDissociation      = F,	! H2O <-> H+ + OH-
+   InorgGasIon            = T,	! Gas-ion equilibrium, e.g. HNO3(g) <-> H+ + NO3-
+   Inorganic2Gas2Ion      = T,	! Additional equilibrium for two gases, e.g. NH3(g)+HNO3(g) <-> NH4+ + NO3-
+   InorgGasLiquid         = T,	! Gas-liquid equilibrium, e.g. CO2(g) <-> CO2(l)
+   InorganicLiquidIon     = F,	! Liquid-ion equilibrium, e.g. HNO3(l) <-> H+ + NO3-  
+   OpenInorganicGasPhase  = F,	! Open/closed gas phase for inorganic gases
+&EndInitialInorganicEquilibriums
+
+
+! d) If equilibrium model converges very slowly or not at all, these otions can improve model performance.
+!    These parameters have no effect on calculated results, but they are used when thermodynamic equilibrium
+!    is calculated iteratively. For example, if WaterLimitRounds is greater than zero, water concentration 
+!    changes are limited by multiplying those with factor WaterLimit (less than one) during first 
+!    WaterLimitRounds iteration rounds. Inorganics salts are an exception, because their equilibriums are
+!    ignored before iteration round SaltLimitRounds, and limit is used after that.
+!
+!  1) Initial equilibrium (may be usefull for difficult systems)
+&InitEqOptions
+   TestConvergency  = F,	! Program checks that iteration converges, and increases limits if needed
+   WaterLimitRounds = 100,
+     WaterLimit     = 0.5E0,
+   GasesLimitRounds = 0,
+     GasesLimit     = 0.2E0,
+   IonLimitRounds   = 0,
+     IonLimit       = 0.5E0,
+   SaltLimitRounds  = 0,
+     SaltLimit      = 1.0E0,
+&EndInitEqOptions
+
+!  2) Later equilibriums (rarely needed)
+&LaterEqOptions
+   TestConvergency  = F,
+   IonLimitRounds   = 0,
+     IonLimit       = 0.9E0,
+   SaltLimitRounds  = 0,
+     SaltLimit      = 0.9E0,
+&EndLaterEqOptions
+
+
+&

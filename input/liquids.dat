@@ -1,0 +1,262 @@
+Input file for data for volatile compounds
+
+File includes vapor and liquid phase data 
+for all the possible volatile compound in 
+the cloud model
+
+BEGIN
+------------------------------------------
+&Compound
+ Name                 = 'Water',
+ Formula              = 'H2O(l)',
+ WeightMole           = 18.01520018,
+ Density              = 1.0,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydroxyl cation',
+ Formula              = 'H+',
+ WeightMole           = 1.01,
+ Density              = 2.00,
+ IZLiquid             = 1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydroxyl anion',
+ Formula              = 'OH-',
+ WeightMole           = 17.01,
+ Density              = 2.00,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitric acid',
+ Formula              = 'HNO3(l)',
+ WeightMole           = 63.01,
+ Density              = 1.5027,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sulfuric acid',
+ Formula              = 'H2SO4(l)',
+ WeightMole           = 98.08,
+ Density              = 1.83,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Bisulfate ion',
+ Formula              = 'HSO4-',
+ WeightMole           = 97.071,
+ Density              = 1.811326,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sulfate ion',
+ Formula              = 'SO42-',
+ WeightMole           = 96.07,
+ Density              = 1.7926531,
+ IZLiquid             = -2,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitric acid',
+ Formula              = 'HNO3(l)',
+ WeightMole           = 63.01,
+ Density              = 1.5027,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitrate ion',
+ Formula              = 'NO3-',
+ WeightMole           = 62.01,
+ Density              = 1.4788476,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ammonia',
+ Formula              = 'NH3(l)',
+ WeightMole           = 17.03,
+ Density              = 1.62,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ammonium ion',
+ Formula              = 'NH4+',
+ WeightMole           = 18.04,
+ Density              = 1.53,
+ IZLiquid             = 1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydrochloric acid',
+ Formula              = 'HCl(l)',
+ WeightMole           = 36.46,
+ Density              = 1.187,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Chloride ion',
+ Formula              = 'Cl-',
+ WeightMole           = 44.01,
+ Density              = 1.10,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sulfur dioxide',
+ Formula              = 'SO2(l)',
+ WeightMole           = 64.07,
+ Density              = 1.03,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Bisulfite ion',
+ Formula              = 'HSO3-',
+ WeightMole           = 81.07,
+ Density              = 1.0174390,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sulfite ion',
+ Formula              = 'SO32-',
+ WeightMole           = 80.07,
+ Density              = 1.0048780,
+ IZLiquid             = -2,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydrogen peroxide',
+ Formula              = 'H2O2(l)',
+ WeightMole           = 34.02,
+ Density              = 1.4067,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ozone',
+ Formula              = 'O3(l)',
+ WeightMole           = 48.00,
+ Density              = 1.61,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitrogen dioxide',
+ Formula              = 'NO2(l)',
+ WeightMole           = 46.01,
+ Density              = 1.45,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Carbon dioxide',
+ Formula              = 'CO2(l)',
+ WeightMole           = 44.01,
+ Density              = 1.10,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Bicarbonate anion',
+ Formula              = 'HCO3-',
+ WeightMole           = 61.02,
+ Density              = 1.525,
+ IZLiquid             = -1,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Carbonate anion',
+ Formula              = 'CO32-',
+ WeightMole           = 60.01,
+ Density              = 1.500,
+ IZLiquid             = -2,
+$EndCompound
+
+------------------------------------------
+&Compound
+ Name                 = 'Magnesium ion',
+ Formula              = 'Mg2+',
+ WeightMole           = 24.31,
+ Density              = 1.74,
+ IZLiquid             = 2,
+$EndCompound
+
+------------------------------------------
+&Compound
+ Name                 = 'Sodium ion',
+ Formula              = 'Na+',
+ WeightMole           = 22.99,
+ Density              = 0.97,
+ IZLiquid             = 1,
+$EndCompound
+
+------------------------------------------
+&Compound
+ Name                 = 'Pinonic acid',
+ Formula              = 'C10H16O3(l)',
+ WeightMole           = 184.23,
+ Density              = 0.786,
+ IZLiquid             = 0,
+$EndCompound
+
+------------------------------------------
+&Compound
+ Name                 = 'DMSO',
+ Formula              = 'C2H6SO(l)',
+ WeightMole           = 78.0,
+ Density              = 1.100,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'MSA',
+ Formula              = 'CH4SO3(l)',
+ WeightMole           = 96.0,
+ Density              = 1.481,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Arginine',
+ Formula              = 'C6H14N4O2(l)',
+ WeightMole           = 174.0,
+ Density              = 1.400,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = '4-oxo-pimelic acid',
+ Formula              = 'C7H10O5(l)',
+ WeightMole           = 174.0,
+ Density              = 1.240,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Boc-statine',
+ Formula              = 'C13H25NO5(l)',
+ WeightMole           = 275.0,
+ Density              = 1.100,
+ IZLiquid             = 0,
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Marine FA',
+ Formula              = 'C52H88O15(l)',
+ WeightMole           = 952.0,
+ Density              = 1.090,
+ IZLiquid             = 0,
+$EndCompound
+
+END
+

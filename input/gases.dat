@@ -1,0 +1,184 @@
+Input file for data for volatile compounds
+
+File includes vapor and liquid phase data 
+for all the possible volatile compound in 
+the cloud model
+
+BEGIN
+------------------------------------------
+&Compound
+ Name                 = 'Water',
+ Formula              = 'H2O',
+ WeightMole           = 18.02,
+ StickingCoefficient  = 1.0,
+ HeatCapacityVapor    = 33.58,
+ StandardEntalphyV    =-241.81D3,
+ StandardEntalphyL    =-284.83D3,
+ CharacteristicLength = 2.641,
+ CharacteristicEnergy = 809.1,
+ VolumeAtBoilingPt    = 18.7,     
+ BoilingTemperature   = 373.15,
+ DipoleMoment         = 1.855,
+ DissolvesTo          = 'H2O(l)'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitric Acid',
+ Formula              = 'HNO3',
+ WeightMole           = 63.01,
+ StickingCoefficient  = 0.2,
+ HeatCapacityVapor    = 53.35,
+ StandardEntalphyV    =-135.06D3,
+ StandardEntalphyL    =-207.36D3,
+ CharacteristicLength = 3.92,
+ CharacteristicEnergy = 615.0,
+ VolumeAtBoilingPt    = 41.7,     
+ BoilingTemperature   = 231.15,
+ DipoleMoment         = 2.17,
+ DissolvesTo          = 'NO3-'
+$END
+------------------------------------------
+&Compound
+ Name                 = 'Ammonia',
+ Formula              = 'NH3',
+ WeightMole           = 17.03,
+ StickingCoefficient  = 0.1,
+ HeatCapacityVapor    = 35.06,
+ StandardEntalphyV    =-46.11D3,
+ StandardEntalphyL    =-80.29D3,
+ CharacteristicLength = 2.9,
+ CharacteristicEnergy = 558.3,
+ VolumeAtBoilingPt    = 25.0,     
+ BoilingTemperature   = 239.80,
+ DipoleMoment         = 1.47,
+ DissolvesTo          = 'NH4+'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydrochloric Acid',
+ Formula              = 'HCl',
+ WeightMole           = 36.46,
+ StickingCoefficient  = 0.2,
+ HeatCapacityVapor    = 29.126,
+ StandardEntalphyV    =-92.307D3,
+ StandardEntalphyL    =-167.16D3,
+ CharacteristicLength = 3.339,
+ CharacteristicEnergy = 344.7,
+ VolumeAtBoilingPt    = 30.6,     
+ BoilingTemperature   = 188.25,
+ DipoleMoment         = 0.0,
+ DissolvesTo          = 'Cl-'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Sulfur Dioxide',
+ Formula              = 'SO2',
+ WeightMole           = 64.07,
+ StickingCoefficient  = 0.1,
+ HeatCapacityVapor    = 39.87,
+ StandardEntalphyV    =-296.83D3,
+ StandardEntalphyL    =-624.00D3,
+ CharacteristicLength = 4.112,
+ CharacteristicEnergy = 335.4,
+ VolumeAtBoilingPt    = 43.8,     
+ BoilingTemperature   = 263.15,
+ DipoleMoment         = 1.63,
+ DissolvesTo          = 'SO2(l)'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Hydrogen Peroxide',
+ Formula              = 'H2O2',
+ WeightMole           = 34.01,
+ StickingCoefficient  = 0.2,
+ HeatCapacityVapor    = 38.16,
+ StandardEntalphyV    = 352.2D3,
+ StandardEntalphyL    =-191.1D3,
+ CharacteristicLength = 4.196,
+ CharacteristicEnergy = 289.3,
+ VolumeAtBoilingPt    = 62.6,     
+ BoilingTemperature   = 423.35,
+ DipoleMoment         = 2.2,
+ DissolvesTo          = 'H2O2(l)'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Ozone',
+ Formula              = 'O3',
+ WeightMole           = 48.00,
+ StickingCoefficient  = 2.D-3,
+ HeatCapacityVapor    = 38.16,
+ StandardEntalphyV    = 142.7D3,
+ StandardEntalphyL    =-12.09D3,
+ CharacteristicLength = 3.889,
+ CharacteristicEnergy = 107.3,
+ VolumeAtBoilingPt    = 22.4,     
+ BoilingTemperature   = 161.25,
+ DipoleMoment         = 0.53,
+ DissolvesTo          = 'O3(l)'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Nitrogen Dioxide',
+ Formula              = 'NO2',
+ WeightMole           = 46.01,
+ StickingCoefficient  = 1.5D-3,
+ HeatCapacityVapor    = 37.91,
+ StandardEntalphyV    = 33.85D3,
+ StandardEntalphyL    =-171.2D3,
+ CharacteristicLength = 4.27,
+ CharacteristicEnergy = 348.4,
+ VolumeAtBoilingPt    = 65.9784,     
+ BoilingTemperature   = 294.3,
+ DipoleMoment         = 0.316,
+ DissolvesTo          = 'NO2(l)'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Carbon Dioxide',
+ Formula              = 'CO2',
+ WeightMole           = 44.011,
+ StickingCoefficient  = 1.D0,
+ HeatCapacityVapor    = 37.11,
+ StandardEntalphyV    =-393.509D3,
+ StandardEntalphyL    =-413.8D3,
+ CharacteristicLength = 3.941,
+ CharacteristicEnergy = 195.2,
+ VolumeAtBoilingPt    = 40.,     
+ BoilingTemperature   = 194.55,
+ DipoleMoment         = 0.0,
+ DissolvesTo          = 'CO2(l)'
+$EndCompound
+----All values for Hydroxyl Radical are not correct
+&Compound
+ Name                 = 'Hydroxyl Radical',
+ Formula              = 'OH',
+ WeightMole           = 17.01,
+ StickingCoefficient  = 1.D0,
+ HeatCapacityVapor    = 37.11,
+ StandardEntalphyV    =-393.509D3,
+ StandardEntalphyL    =-413.8D3,
+ CharacteristicLength = 3.941,
+ CharacteristicEnergy = 195.2,
+ VolumeAtBoilingPt    = 40.,     
+ BoilingTemperature   = 194.55,
+ DipoleMoment         = 0.0,
+ DissolvesTo          = 'none'
+$EndCompound
+------------------------------------------
+&Compound
+ Name                 = 'Pinonic acid',
+ Formula              = 'C10H16O3',
+ WeightMole           = 184.23,
+ StickingCoefficient  = 0,
+ HeatCapacityVapor    = 0,
+ StandardEntalphyV    = 0,
+ StandardEntalphyL    = 0,
+ CharacteristicLength = 0,
+ CharacteristicEnergy = 0,
+ VolumeAtBoilingPt    = 0,     
+ BoilingTemperature   = 0,
+ DipoleMoment         = 0.0,
+ DissolvesTo          = 'C10H16O3(l)',
+$EndCompound
+END

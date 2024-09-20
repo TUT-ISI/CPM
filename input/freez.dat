@@ -1,0 +1,87 @@
+Freezing parameters
+
+
+BEGIN
+Ice model on/off.
+ice_mod = 0  -> off
+ice_mod = 1  -> on
+&Icemodo
+   ice_mod = 1
+$EndIcemodo
+
+The method for ice nucleation calculus
+1 = Laaksonen et al. or 2 = Koop et al.
+&Nucleation
+   rate_method = 2
+$EndNucleation
+
+Limits to freezing probability (if below lower_limit ->
+freezin probability = 0 and if over upper_limit -> prob = 1)
+&Probability
+   upper_limit = 0.99
+   ower_limit = 1.0d-6
+$EndProbability
+
+This option is for the DtOutIce (time step to be used during the freezing). 
+Because the probability can be limited (above), the time step activates when 
+freezing starts. In some cases, this is ok but here is an option that allows
+the DtOutIce activate when probability for freezing is over 0 and the limits
+are off (for this option). 1 = limits on, 2 = limits off
+&IceStepStart
+   ice_step_start = 2
+$EndIceStepStart
+
+dr_c = Limit for rational freezing in program ice_bin_divider [#/cm3]
+freez_cons_lo = limit for making a new solid bin [#/cm3]
+C_min_limit = limit for number consentration to activate ice model [#/cm3]
+y_min_limit = limit for liquid phase consentration [#/cm3] for ice
+modulus to activate (in one size class). This option makes the model
+more stable.
+&Divider
+   dr_c = 1.d-25
+   freez_cons_lo = 1.d-20
+   C_min_limit = 1.d-4
+   y_min_limit=1.d-25
+$EndDivider
+
+Method for determining the saturation vapor pressure over water 
+and ice; 1 = Magnus equation and 2 = Goff Gratch
+&Satvappress
+   e_sat_method = 2
+$EndSatvappress
+
+
+* method_HNO3 = 1 -> HNO3 to iceparticles, adsorption off
+  method_HNO3 = 2 -> HNO3 to gasphase, adsorption off
+  method_HNO3 = 3 -> HNO3 to iceparticles, adsorption on
+  method_HNO3 = 4 -> HNO3 to gasphase, adsorption on
+* Equilibrium adsorption constant (K_eq) method:
+  method_K_eq = 1 -> Popp et al. (constant dH_ads)
+  method_K_eq = 2 -> Cox et.al
+  method_K_eq = 3 -> Ullerstam et.al
+  method_K_eq = 4 -> Tabazadeh et al. -> improved method by Krämer et al.
+  (temperature dependent dG_ads) DON'T USE THIS!!!
+* surfdensity_HNO3 is the amount of HNO3 molecules in complete monolayer
+  [molecules/m2]
+* idiss_ads = 1 -> Langmuir's isotherm dissociative
+  idiss_ads = 2 -> Langmuir's isotherm non-dissociative
+* stick_hno3_ads is accommodation coefficient for HNO3 (adsorption only, highly experimental)
+** References:
+  - Popp et al: Nitric acid uptake on subtropical cirrus cloud particles 2004
+  - Tabazadeh et al: A surface chemistry model for nonreactive trace gas 
+                     adsorption on ice: Implications for nitric acid scavening
+                     by cirrus 1999
+  - Krämer et al: Nitric acid partitioning in cirrus clouds: a synopsis based 
+                  on field, laboratory and model studies 2003
+
+&Heterogeneous
+    IF_FREEZ_CONTACT = 0
+    I_MODE_CONTACT = 1
+    IF_FREEZ_DEPOS =0
+    I_MODE_DEPOS = 1
+    IF_FREEZ_IMMERSION = 0	
+    I_MODE_IMMERSION = 1
+    r_min_hm = 12.0e-3
+    I_HM_METHOD = 1
+    I_HM_NEW = 10		
+&EndHeterogeneous
